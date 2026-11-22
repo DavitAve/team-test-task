@@ -226,36 +226,6 @@ summary::-webkit-details-marker {
   margin-bottom: 0;
 }
 
-.article-section > .btn {
-  display: flex;
-  margin: 20px auto 0;
-}
-
-.article-section .download-buttons {
-  justify-content: center;
-}
-
-.download-buttons .btn {
-  min-width: 0;
-}
-
-.download-buttons .btn > span:last-child {
-  display: flex;
-  flex-direction: column;
-  font-weight: 400;
-}
-
-.download-buttons .btn > span:first-child {
-  display: grid;
-  place-items: center;
-}
-
-@media (min-width: 1200px) {
-  .header .buttons .btn {
-    min-width: 150px;
-  }
-}
-
 .games_section .arrows button {
   display: grid;
   place-items: center;
@@ -273,11 +243,8 @@ summary::-webkit-details-marker {
   cursor: default;
 }
 
-.games_section .game_block ul li button.image {
-  border: 0;
-  padding: 0;
+.games_section .game_block ul li .image {
   cursor: default;
-  background: transparent;
 }
 
 .games_section img {
@@ -303,23 +270,7 @@ summary::-webkit-details-marker {
   text-decoration: none;
 }
 
-.mobile-panel .main-text .icon {
-  flex-shrink: 0;
-}
-
 @media (max-width: 1199px) {
-  html {
-    scroll-padding-top: 154px;
-  }
-
-  .footer {
-    padding-bottom: 92px;
-  }
-
-  .footer .arrow-up.active {
-    bottom: 94px;
-  }
-
   .header .nav-block .site-nav {
     display: none;
   }
@@ -356,11 +307,6 @@ summary::-webkit-details-marker {
   footer .footer-container .links-2 {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .download-buttons .btn {
-    flex: 1 1 0;
-    padding: 6px 12px;
   }
 }
 
