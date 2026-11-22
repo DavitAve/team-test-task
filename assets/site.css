@@ -1,0 +1,377 @@
+[hidden] {
+  display: none !important;
+}
+
+body {
+  overflow-x: visible;
+}
+
+button {
+  font-family: inherit;
+}
+
+button:disabled,
+.btn:disabled {
+  cursor: default;
+}
+
+:focus-visible {
+  outline: 3px solid var(--j-secondary-color);
+  outline-offset: 3px;
+}
+
+html {
+  scroll-padding-top: 96px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip-path: inset(50%);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.custom-logo-link {
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.custom-logo {
+  width: auto;
+  height: 50px;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav ul,
+.footer-nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav a,
+.footer-nav a {
+  display: block;
+  padding: 9px 4px;
+  color: var(--j-menu-text);
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 650;
+}
+
+.site-nav [aria-current],
+.footer-nav [aria-current],
+.site-nav a:hover,
+.footer-nav a:hover {
+  color: var(--j-secondary-color);
+}
+
+.hero .intro p {
+  margin: 0;
+}
+
+.hero .intro p + p {
+  margin-top: 0.5em;
+}
+
+.hero .image-bg {
+  margin: 0;
+}
+
+.hero .image-bg img,
+.article-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.categories a {
+  text-decoration: none;
+}
+
+.contents {
+  background: var(--j-blocks-color);
+  border-radius: var(--j-rounded-large);
+  padding: 18px 22px;
+  margin-bottom: var(--j-margin-section);
+}
+
+.contents summary,
+.faq-item summary {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  list-style: none;
+  font-weight: 700;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.contents summary::after,
+.faq-item summary::after {
+  content: "";
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  margin: 0 6px 4px;
+  border-right: 2px solid var(--j-secondary-color);
+  border-bottom: 2px solid var(--j-secondary-color);
+  transform: rotate(45deg);
+}
+
+.contents[open] summary::after,
+.faq-item[open] summary::after {
+  transform: rotate(225deg);
+  margin-bottom: -5px;
+}
+
+.contents nav {
+  margin-top: 16px;
+}
+
+.contents ol {
+  margin: 0;
+  list-style: decimal;
+  padding-left: 24px;
+}
+
+.contents li + li {
+  margin-top: 8px;
+}
+
+.contents a:hover {
+  text-decoration: underline;
+}
+
+.article-section {
+  line-height: 1.55;
+}
+
+.article-section ol.labelled-steps > li {
+  padding-left: 0;
+}
+
+.article-section ol.labelled-steps > li::before {
+  display: none;
+}
+
+.article-section h3:not(:first-child) {
+  margin-top: 1em;
+}
+
+.article-section .article-image {
+  margin: 22px auto;
+  max-width: 100%;
+  width: fit-content;
+}
+
+.article-image img {
+  border-radius: var(--j-rounded-large);
+}
+
+.article-section .wp-block-table {
+  max-width: 100%;
+}
+
+.article-section .wp-block-table table {
+  min-width: 0;
+}
+
+.article-section .wp-block-table :is(th, td) {
+  vertical-align: top;
+  text-align: left;
+  overflow-wrap: anywhere;
+  line-height: 1.45;
+}
+
+.article-section .wp-block-table th {
+  font-weight: 700;
+}
+
+.faq-item {
+  background: var(--j-style1-color);
+  padding: 18px 20px;
+  border-radius: var(--j-rounded-large);
+}
+
+.faq-item + .faq-item {
+  margin-top: 10px;
+}
+
+.faq-item summary h3 {
+  font-size: 18px;
+  margin: 0;
+  text-transform: none;
+}
+
+.faq-item[open] summary {
+  margin-bottom: 14px;
+}
+
+.faq-item p:last-child {
+  margin-bottom: 0;
+}
+
+.article-section > .btn {
+  display: flex;
+  margin: 20px auto 0;
+}
+
+.article-section .download-buttons {
+  justify-content: center;
+}
+
+.download-buttons .btn {
+  min-width: 0;
+}
+
+.download-buttons .btn > span:last-child {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+}
+
+.download-buttons .btn > span:first-child {
+  display: grid;
+  place-items: center;
+}
+
+@media (min-width: 1200px) {
+  .header .buttons .btn {
+    min-width: 150px;
+  }
+}
+
+.games_section .arrows button {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  color: var(--j-header-and-footer-text);
+  background: var(--j-buttons-style1-bg);
+  border: none;
+  border-radius: var(--j-rounded-small);
+  cursor: pointer;
+}
+
+.games_section .arrows button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.games_section .game_block ul li button.image {
+  border: 0;
+  padding: 0;
+  cursor: default;
+  background: transparent;
+}
+
+.games_section img {
+  object-fit: cover;
+}
+
+.footer .logo img {
+  height: 42px;
+  width: auto;
+}
+
+.footer .footer-bottom .icons img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.footer .links-2 {
+  align-items: center;
+}
+
+.footer .arrow-up {
+  text-decoration: none;
+}
+
+.mobile-panel .main-text .icon {
+  flex-shrink: 0;
+}
+
+@media (max-width: 1199px) {
+  html {
+    scroll-padding-top: 154px;
+  }
+
+  .footer {
+    padding-bottom: 92px;
+  }
+
+  .footer .arrow-up.active {
+    bottom: 94px;
+  }
+
+  .header .nav-block .site-nav {
+    display: none;
+  }
+
+  header.header .mobile-menu:not([hidden]) {
+    display: flex;
+    height: auto;
+    max-height: 54dvh;
+    overflow-y: auto;
+  }
+
+  header.header .menu-mobile-icon {
+    border: none;
+  }
+
+  .contents {
+    margin-bottom: var(--j-margin-section-mob);
+  }
+}
+
+@media (max-width: 767px) {
+  .article-section .table-wrap:has(tr > :nth-child(3)) table {
+    min-width: 34rem;
+  }
+
+  .article-section .table-wrap {
+    overscroll-behavior-x: contain;
+  }
+
+  .footer-nav ul {
+    flex-wrap: wrap;
+  }
+
+  footer .footer-container .links-2 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .download-buttons .btn {
+    flex: 1 1 0;
+    padding: 6px 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0s !important;
+  }
+}
